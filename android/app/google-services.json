@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "757385485617",
+    "project_id": "logicelements-53812",
+    "storage_bucket": "logicelements-53812.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757385485617:android:6cd4f031bb8fd05f3f2410",
+        "android_client_info": {
+          "package_name": "br.edu.ufal.pibic.logic_elements_pibic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757385485617-7mkp3od5o0d5boho61ajc33fl0hs45qj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.edu.ufal.pibic.logic_elements_pibic",
+            "certificate_hash": "0dc752c1cbea30bb153e7209ef250cc605f4c162"
+          }
+        },
+        {
+          "client_id": "757385485617-tn16i81nleoc0g9vrrbrv6m6kh64h4r3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC89qxWrhniot0Zzx4zB5m-G8FebcGhlFU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757385485617-tn16i81nleoc0g9vrrbrv6m6kh64h4r3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
