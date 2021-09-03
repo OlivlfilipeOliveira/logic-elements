@@ -61,7 +61,7 @@ class _FormulasState extends State<Formulas> {
     print(operadores);
     quantidadeListas = widget.quantidadeListas;
     selectOperator = widget.selectOperator;
-
+    print(formulas);
     pdf.geraPdfFormulas(formulas, atomosMin, atomosMax, quantidadeAtomos, quantidadeFbfs, operadores, quantidadeListas, selectOperator).then((value){
       file = value;
     });
@@ -106,40 +106,19 @@ class _FormulasState extends State<Formulas> {
               child: FutureBuilder(
                 future: _getFormulas(),
                 builder: (context, snapshot){
-                  switch (snapshot.connectionState){
-                    case ConnectionState.waiting:
-                    case ConnectionState.none:
-                      return Container(
-                        width: 200.0,
-                        height: 200.0,
-                        alignment: Alignment.center,
-                        child: CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation<Color>(
-                            Colors.black
-                          ),
-                          strokeWidth: 5.0,
-                        ),
-                      );
-                    default:
-                      if(snapshot.hasError)
-                        return Container();
-                      else
-                        return ListView.builder(
-                          itemCount: int.parse(quantidadeFbfs),
-                            itemBuilder: (context, index){
-                              return _formulaCard(context, index);
-                            }
-                        );
+                  if (snapshot.connectionState == ConnectionState.none &&
+                      snapshot.hasData == null) {
+                    //print('project snapshot data is: ${projectSnap.data}');
+                    return Container();
                   }
+                  return ListView.builder(
+                      itemCount: int.parse(quantidadeFbfs),
+                      itemBuilder: (context, index){
+                        return _formulaCard(context, index);
+                      }
+                  );
                 },
               )
-              // child: ListView.builder(
-              //   padding: EdgeInsets.all(10.0),
-              //   itemCount: formulas.length,
-              //   itemBuilder: (context, index) {
-              //     return _formulaCard(context, index);
-              //   },
-              // ),
             ),
             Padding(
               padding: EdgeInsets.only(bottom: 10.0, right: 10.0, left: 10.0),
@@ -186,6 +165,7 @@ class _FormulasState extends State<Formulas> {
   }
 
   _formulaCard(BuildContext context, int index) {
+    print("cheguei aqui");
     return Card(
       child: Padding(
         padding: EdgeInsets.all(10.0),

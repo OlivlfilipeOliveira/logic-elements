@@ -75,7 +75,7 @@ class _FormulaState extends State<Formula> {
 
     http.Response response;
 
-    response = await http.get("http://10.0.0.101:8080/api-logic/fbfs/$_atomosMin/$_atomosMax/$_atomosQuantidade/$_quantidadeFbfs/$selectOperator/$_operadoresLista/$_listasExercicios");
+    response = await http.get("http://10.0.0.102:8080/api-logic/fbfs/$_atomosMin/$_atomosMax/$_atomosQuantidade/$_quantidadeFbfs/$selectOperator/$_operadoresLista/$_listasExercicios");
 
     return json.decode(response.body);
   }

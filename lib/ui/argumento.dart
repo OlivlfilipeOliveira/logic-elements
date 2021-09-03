@@ -89,7 +89,7 @@ class _ArgumentoState extends State<Argumento> {
 
     http.Response response;
 
-    response = await http.get("http://10.0.0.101:8080/api-logic/arguments/$_regras/$_atomos/$_quantArguments/$_listas");
+    response = await http.get("http://10.0.0.102:8080/api-logic/arguments/$_regras/$_atomos/$_quantArguments/$_listas");
 
     return json.decode(response.body);
 

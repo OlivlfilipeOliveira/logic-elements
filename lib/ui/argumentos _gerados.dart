@@ -87,43 +87,22 @@ class _ArgumentosState extends State<Argumentos> {
               ),
             ),
             Expanded(
-              child: FutureBuilder(
-                future: _getArguments(),
-                builder: (context, snapshot){
-                  switch (snapshot.connectionState){
-                    case ConnectionState.waiting:
-                    case ConnectionState.none:
-                      return Container(
-                        width: 200.0,
-                        height: 200.0,
-                        alignment: Alignment.center,
-                        child: CircularProgressIndicator(
-                          valueColor: AlwaysStoppedAnimation<Color>(
-                              Colors.black
-                          ),
-                          strokeWidth: 5.0,
-                        ),
-                      );
-                    default:
-                      if(snapshot.hasError)
-                        return Container();
-                      else
-                        return ListView.builder(
-                            itemCount: int.parse(argumentos),
-                            itemBuilder: (context, index){
-                              return _argumentoCard(context, index);
-                            }
-                        );
-                  }
-                },
-              ),
-              // child: ListView.builder(
-              //   padding: EdgeInsets.all(10.0),
-              //   itemCount: argumentos.length,
-              //   itemBuilder: (context, index) {
-              //     return _argumentoCard(context, index);
-              //   },
-              // ),
+                child: FutureBuilder(
+                  future: _getArguments(),
+                  builder: (context, snapshot){
+                    if (snapshot.connectionState == ConnectionState.none &&
+                        snapshot.hasData == null) {
+                      //print('project snapshot data is: ${projectSnap.data}');
+                      return Container();
+                    }
+                    return ListView.builder(
+                        itemCount: int.parse(argumentos),
+                        itemBuilder: (context, index){
+                          return _argumentoCard(context, index);
+                        }
+                    );
+                  },
+                )
             ),
             Padding(
                 padding: EdgeInsets.only(bottom: 10.0, right: 10.0, left: 10.0),
