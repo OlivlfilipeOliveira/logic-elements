@@ -69,5 +69,12 @@ final Map<String, String> ptBr = {
   'MAXATOMOS': 'Máximo de átomos',
   //argumentos gerados
   'REGRASESCOLHIDAS': 'Regras de inferência escolhidas',
-
+  "universidade": "Universidade Federal de Alagoas",
+  "bolsista": "Bolsista: ",
+  "coordenador": "Coordenador: ",
+  "colaborador": "Colaborador: ",
+  "resumo": "Resumo: ",
+  "textResumo": "Esta ferramenta foi desenvovida com recursos provenientes do Edital PIBIC 2020-2021 UFAL/CNPq/FAPEAL. Ela tem o objetivo de gerar exercícios automaticamente para a disciplina de Lógica. A abordagem utiliza a técnica de Geração por Esboço da Síntese de Programas em conjunto com especificações matemáticas definidas na linguagem de geração de modelos Alloy. O usuário insere parâmetros no aplicativo, que por sua vez acessa uma API que se comunica com a linguagem Alloy. A linguagem recebe os parâmetros do usuário em forma de especificação e encontra os modelos que as satisfazem, retornando-os para usuário através da API e o aplicativo os recebe já processados em formato de PDF.",
+  "campus": "Campus ",
+  "cidade": "Arapiraca",
 };

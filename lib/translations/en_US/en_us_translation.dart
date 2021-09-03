@@ -69,4 +69,12 @@ final Map<String, String> enUs = {
   'MINATOMOS': 'Minimum atoms',
   'MAXATOMOS': 'Maximum atoms',
   'REGRASESCOLHIDAS': 'Chosen inference rules',
+  "universidade": "Federal University of Alagoas",
+  "bolsista": "Scholarship holder: ",
+  "coordenador": "Coordinator: ",
+  "colaborador": "Collaborator: ",
+  "resumo": "Summary: ",
+  "textResumo": "This tool was developed with resources from the Public Notice PIBIC 2020-2021 UFAL/CNPq/FAPEAL. It aims to automatically generate exercises for the discipline of Logic. The approach uses the technique of Generation by Outline of Program Synthesis in conjunction with Mathematical specifications defined in the Alloy model generation language. The user inserts parameters into the application, which in turn accesses an API that communicates with the Alloy language. The language receives the parameters from the user in specification form and finds the models that the satisfy, returning them to the user through the API and the application receives them already processed in PDF format.",
+  "campus": "Campus ",
+  "cidade": "Arapiraca",
 };

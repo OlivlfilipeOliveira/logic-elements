@@ -1,4 +1,4 @@
-#Thu Aug 19 20:06:16 BRT 2021
+#Fri Sep 03 14:45:05 BRT 2021
 base.0=/home/filipe/StudioProjects/logic-elements/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
