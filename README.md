@@ -5,8 +5,8 @@ O aplicativo LógicElements foi desenvolvido no Laboratório Multidisciplinar de
 **Título do projeto:** Síntese de Fórmulas e Argumentos da Lógica Proposicional
 
 **Autores:** 
-  * Filipe Oliveira(http://lattes.cnpq.br/4330042745444431)
-  * Elthon Oliveira(http://lattes.cnpq.br/7627571580413875)
+  * Filipe da Silva Oliveira(http://lattes.cnpq.br/4330042745444431)
+  * Elthon Allex da Silva Oliveira(http://lattes.cnpq.br/7627571580413875)
 
  **Contextualização:** 
 
