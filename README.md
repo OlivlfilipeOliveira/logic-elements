@@ -17,3 +17,7 @@ _Síntese de Programas_ é a tarefa de encontrar automaticamente um programa num
   * Geração de questões de Lógica baseada na técnica de Geração por Esboço. Em **Jornada Nacional de Iniciação Científica (JNIC) - 73ª Reunião Anual da SBPC.**
   * Geração de fórmulas da Lógica Proposicional. Em **XL Congresso Nacional de Matemática Aplicada e Computacional.**
   * Geração de argumentos da Lógica Proposicional. Em **XL Congresso Nacional de Matemática Aplicada e Computacional.**
+  * Especificações Alloy de Elementos da Lógica Proposicional. Em **ANAIS DO XIV ENCONTRO UNIFICADO DE COMPUTAÇÃO DO PIAUÍ E XI SIMPÓSIO DE SISTEMAS DE INFORMAÇÃO.**
+  * GERAÇÃO DE QUESTÕES DE LÓGICA UTILIZANDO A LINGUAGEM DE GERAÇÃO DE MODELOS ALLOY. Em **Jornada Nacional de Iniciação Científica (JNIC) - 74ª Reunião Anual da SBPC.**
+  * Geração de argumentos válidos da Lógica Proposicional. Em **Proceeding Series of the Brazilian Society of Computational and Applied Mathematics.** 
+  * Geração de fórmulas da Lógica Proposicional. Em **Proceeding Series of the Brazilian Society of Computational and Applied Mathematics.**
